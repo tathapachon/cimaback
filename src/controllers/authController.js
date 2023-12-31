@@ -7,6 +7,7 @@ const bcrypt = require('bcryptjs');
 const {mailPayment}  = require('../middleware/nodemailer-config.js');
 
 router.post('/register', async (req, res) => {
+  console.log("casa,", req.body)
   const { lastname,email, password, name } = req.body;
   try {
    
